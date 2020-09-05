@@ -1,5 +1,4 @@
-<aside class="logo">
-
+<div class="d-flex justify-content-center mb-3">
 	{% if page.url == '/index.html' or page.url == '/' %}
 		{% assign link = '/about' %}
 		{% assign prompt = 'About the Author' %}
@@ -9,8 +8,6 @@
 	{% endif %}
 
 	<a href="{{ link | prepend: site.baseurl | prepend: site.url }}">
-		<img src="{{ site.logo_url }}" alt="" class="logo-avatar">
+		<img src="{{ site.logo_url }}" alt="" class="author-icon rounded-circle animate__animated animate__bounceInDown">
 	</a>
-	<span class="logo-prompt code">{{ prompt }}</span>
-
-</aside>
+</div>
